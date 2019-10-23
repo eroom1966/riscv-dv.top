@@ -1,0 +1,40 @@
+#
+# clone and build
+#
+
+git clone --recurse-submodules https://github.com/eroom1966/riscv-dv.top.git
+
+cd riscv-dv.top/riscv-dv.overlay
+source setup.env
+make VERBOSE=0 TEST
+
+
+#
+# Notes
+#
+
+After Cloning create submodules
+# https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+#
+# Adding
+#
+
+# google
+git submodule add -b master https://github.com/google/riscv-dv.git
+    
+# Posedge Candidate VS ref
+git submodule add -b master https://github.com/eroom1966/riscv-compliance.git riscv-compliance.ref
+git submodule add -b master https://github.com/hvonbank/riscv-compliance.git  riscv-compliance.new
+    
+git submodule add -b master https://github.com/eroom1966/riscv-spike.git
+git submodule add -b master https://github.com/eroom1966/riscv-ovpsim.git
+git submodule add -b master https://github.com/eroom1966/toolchains.git
+git submodule add -b master https://github.com/eroom1966/riscv-dv.overlay.git
+
+#
+# Updating
+#
+git submodule update --recursive --remote
+(eclipse) git pull
+

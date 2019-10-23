@@ -1,0 +1,28 @@
+[submodule "riscv-dv"]
+	path = riscv-dv
+	url = https://github.com/google/riscv-dv.git
+	branch = master
+[submodule "riscv-compliance.ref"]
+	path = riscv-compliance.ref
+	url = https://github.com/eroom1966/riscv-compliance.git
+	branch = master
+[submodule "riscv-compliance.new"]
+	path = riscv-compliance.new
+	url = https://github.com/hvonbank/riscv-compliance.git
+	branch = master
+[submodule "riscv-spike"]
+	path = riscv-spike
+	url = https://github.com/eroom1966/riscv-spike.git
+	branch = master
+[submodule "riscv-ovpsim"]
+	path = riscv-ovpsim
+	url = https://github.com/eroom1966/riscv-ovpsim.git
+	branch = master
+[submodule "toolchains"]
+	path = toolchains
+	url = https://github.com/eroom1966/toolchains.git
+	branch = master
+[submodule "riscv-dv.overlay"]
+	path = riscv-dv.overlay
+	url = https://github.com/eroom1966/riscv-dv.overlay.git
+	branch = master
